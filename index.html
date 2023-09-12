@@ -373,7 +373,6 @@
                             </a>
                         </li>
                     </ul>
-
                 </address>
             </div>
             <div class="social-network">
@@ -415,10 +414,10 @@
 
             </div>
             <form class="social-form">
-                <label class="social-label" for="">
+                <div class="social-label">
                     <p class="social-label-text">Підпишіться на розсилку</p>
-                    <input class="social-input" type="mail" placeholder="E-mail">
-                </label>
+                    <input class="social-input" type="email" placeholder="E-mail" name="e-mail">
+                </div>
                 <button class="social-btn"><span class="social-btn-text">Підписатися</span>
                     <svg class="social-icon" width="24" height="24">
                         <use href="./imges/sprite.svg#telegram"></use>
@@ -438,32 +437,31 @@
                 <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
                 <label class="modal-label" for="name">
                     <span class="form-name">Ім'я</span>
-                    <input class="form-input" type="text" id="name">
+                    <input class="form-input" type="text" id="name" name="name">
                     <svg class="form-icon" width="18" height="18">
                         <use href="./imges/sprite.svg#person"></use>
                     </svg>
                 </label>
                 <label class="modal-label" for="tel">
                     <span class="form-name">Телефон</span>
-                    <input class="form-input" type="tel" id="tel">
+                    <input class="form-input" type="tel" id="tel" name="tel">
                     <svg class="form-icon" width="18" height="18">
                         <use href="./imges/sprite.svg#phone"></use>
                     </svg>
                 </label>
                 <label class="modal-label" for="mail">
                     <span class="form-name">Пошта</span>
-                    <input class="form-input" type="mail" id="mail" />
+                    <input class="form-input" type="email" id="mail" name="email" />
                     <svg class="form-icon" width="18" height="18">
                         <use href="./imges/sprite.svg#email"></use>
                     </svg>
                 </label>
                 <label class="modal-label textarea" for="coment">
                     <span class="form-name">Коментар</span>
-                    <textarea class="form-textarea" id="coment" placeholder="Введіть текст"></textarea>
+                    <textarea class="form-textarea" id="coment" placeholder="Введіть текст" name="coment"></textarea>
                 </label>
-
                 <label class="modal-label label-checkbox" for="checkbox">
-                    <input class="checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
                     <span class="custom-checkbox">
                         <svg class="checkbox-icon" width="16" height="15">
                             <use href="./imges/sprite.svg#check">
@@ -480,7 +478,7 @@
                         </a>
                     </span>
                 </label>
-                <button class="modal-btn" type="button">Відправити</button>
+                <button class="modal-btn" type="submit">Відправити</button>
             </form>
         </div>
     </div>
